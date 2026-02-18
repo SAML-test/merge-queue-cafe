@@ -13,6 +13,12 @@ MENU_ITEMS = [
         "price": 2.75,
         "description": "Steamed organic green tea.",
     },
+    {
+        "name": "Cold Brew",
+        "category": "coffee",
+        "price": 5.00,
+        "description": "Slow-steeped for 12 hours, served over ice.",
+    },
 ]
 
 

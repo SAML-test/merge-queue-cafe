@@ -15,6 +15,18 @@ COFFEE_ITEMS = [
         "price": 5.25,
         "description": "Equal parts espresso, steamed milk, and foam.",
     },
+    {
+        "name": "Latte",
+        "category": "coffee",
+        "price": 5.50,
+        "description": "Espresso with steamed milk and a touch of foam.",
+    },
+    {
+        "name": "Espresso",
+        "category": "coffee",
+        "price": 4.00,
+        "description": "A bold, concentrated shot of pure coffee.",
+    },
 ]
 
 TEA_ITEMS = [

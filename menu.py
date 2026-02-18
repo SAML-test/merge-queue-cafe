@@ -29,6 +29,12 @@ TEA_ITEMS = [
 
 # --- new tea drinks go below ---
 # slot:matcha-latte
+    {
+        "name": "Chai Latte",
+        "category": "tea",
+        "price": 5.50,
+        "description": "Spiced black tea with steamed milk and honey.",
+    },
 # slot:chai-latte
 
 OTHER_ITEMS = [

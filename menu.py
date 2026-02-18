@@ -13,6 +13,12 @@ MENU_ITEMS = [
         "price": 2.75,
         "description": "Steamed organic green tea.",
     },
+    {
+        "name": "Matcha Latte",
+        "category": "tea",
+        "price": 5.75,
+        "description": "Ceremonial-grade matcha whisked with oat milk.",
+    },
 ]
 
 

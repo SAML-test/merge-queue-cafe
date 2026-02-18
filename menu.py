@@ -33,6 +33,12 @@ OTHER_ITEMS = [
 
 MENU_ITEMS = COFFEE_ITEMS + TEA_ITEMS + OTHER_ITEMS
 
+if len(MENU_ITEMS) > MAX_MENU_SIZE:
+    raise RuntimeError(
+        f"FATAL: Menu has {len(MENU_ITEMS)} items but the kitchen can only handle "
+        f"{MAX_MENU_SIZE}! The app cannot start. Remove items or increase MAX_MENU_SIZE."
+    )
+
 
 def get_menu():
     """Return the full menu sorted by category then name."""

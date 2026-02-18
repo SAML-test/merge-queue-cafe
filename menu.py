@@ -1,12 +1,17 @@
 """Café menu data and helpers."""
 
-MENU_ITEMS = [
+MAX_MENU_SIZE = 6
+
+COFFEE_ITEMS = [
     {
         "name": "Drip Coffee",
         "category": "coffee",
         "price": 3.50,
         "description": "Classic house-brewed drip coffee.",
     },
+]
+
+TEA_ITEMS = [
     {
         "name": "Green Tea",
         "category": "tea",
@@ -14,6 +19,10 @@ MENU_ITEMS = [
         "description": "Steamed organic green tea.",
     },
 ]
+
+OTHER_ITEMS = []
+
+MENU_ITEMS = COFFEE_ITEMS + TEA_ITEMS + OTHER_ITEMS
 
 
 def get_menu():

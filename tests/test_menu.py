@@ -1,6 +1,6 @@
 """Tests for the café menu."""
 
-from menu import MENU_ITEMS, get_categories, get_menu
+from menu import MAX_MENU_SIZE, MENU_ITEMS, get_categories, get_menu
 
 
 def test_menu_items_have_required_fields():
@@ -33,3 +33,18 @@ def test_get_categories_returns_unique_sorted():
 def test_no_empty_descriptions():
     for item in MENU_ITEMS:
         assert item["description"].strip(), f"{item['name']} has empty description"
+
+
+def test_menu_size_within_limit():
+    assert len(MENU_ITEMS) <= MAX_MENU_SIZE, (
+        f"Menu has {len(MENU_ITEMS)} items but max is {MAX_MENU_SIZE}. "
+        f"Increase MAX_MENU_SIZE or remove items before adding more."
+    )
+
+
+def test_average_price_reasonable():
+    avg = sum(item["price"] for item in MENU_ITEMS) / len(MENU_ITEMS)
+    assert avg <= 4.50, (
+        f"Average menu price is ${avg:.2f}, which exceeds the $4.50 target. "
+        f"Consider adding more affordable options."
+    )

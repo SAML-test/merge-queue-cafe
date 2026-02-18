@@ -20,7 +20,14 @@ TEA_ITEMS = [
     },
 ]
 
-OTHER_ITEMS = []
+OTHER_ITEMS = [
+    {
+        "name": "Hot Chocolate",
+        "category": "other",
+        "price": 4.50,
+        "description": "Rich dark chocolate melted into steamed milk.",
+    },
+]
 
 MENU_ITEMS = COFFEE_ITEMS + TEA_ITEMS + OTHER_ITEMS
 

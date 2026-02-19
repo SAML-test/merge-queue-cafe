@@ -23,6 +23,12 @@ COFFEE_ITEMS = [
         "description": "Espresso with steamed milk and a touch of foam.",
     },
     # slot:latte
+    {
+        "name": "Cappuccino",
+        "category": "coffee",
+        "price": 5.25,
+        "description": "Equal parts espresso, steamed milk, and foam.",
+    },
     # slot:cappuccino
     # slot:americano
     # slot:cold-brew

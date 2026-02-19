@@ -42,7 +42,6 @@ jobs:
               .map(([step, _]) => step);
             
             const isMergeGroup = context.eventName === 'merge_group';
-            const eventType = isMergeGroup ? 'Merge Queue' : 'PR';
             
             let comment = `## ❌ CI Workflow Failed${isMergeGroup ? ' in Merge Queue' : ''}\n\n`;
             comment += `**Failed step(s):** ${failedSteps.join(', ')}\n\n`;
@@ -91,6 +90,6 @@ jobs:
                   body: comment
                 });
               } else {
-                console.error(`Could not extract PR number from merge group head_ref: ${headRef}. PR will not receive a failure notification. Please check the workflow run for details.`);
+                core.error(`Could not extract PR number from merge group head_ref: ${headRef}. PR will not receive a failure notification. Please check the workflow run for details.`);
               }
             }
